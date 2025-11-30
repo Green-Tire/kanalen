@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanalen</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        background-color: #121212;       /* Dark mode */
+        font-family: system-ui, sans-serif;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #cfcfcf;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 300px;
+        display: none; /* Initially hidden */
+    }
+
+    li {
+        margin: 12px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.2rem;
+        padding: 12px 14px;
+        display: block;
+        border-radius: 8px;
+        background-color: #1e1e1e;
+    }
+
+    a:hover {
+        background-color: #2a2a2a;
+    }
+</style>
+
+<script>
+    // Function to toggle the visibility of the category list
+    function toggleCategory(category) {
+        const list = document.getElementById(category);
+        const isVisible = list.style.display === 'block';
+        list.style.display = isVisible ? 'none' : 'block';
+    }
+</script>
+
+</head>
+<body>
+
+<!-- Bijblijven category -->
+<h2 onclick="toggleCategory('bijblijven-list')">Bijblijven</h2>
+<ul id="bijblijven-list">
+    <li><a href="https://www.nporadio1.nl/uitzendingen">Radio 1</a></li>
+    <li><a href="https://npo.nl/luister/podcasts/6-met-het-oog-op-morgen">Met het Oog op Morgen</a></li>
+    <li><a href="https://npo.nl/luister/podcasts/19-het-beste-uit-het-oog">Het beste uit het Oog</a></li>
+    <li><a href="https://npo.nl/luister/podcasts/123-de-dag">De Dag</a></li>
+    <li><a href="https://npo.nl/luister/podcasts/644-lang-verhaal-kort">Lang verhaal kort</a></li>
+    <li><a href="https://npo.nl/luister/podcasts/102-de-stemming-van-vullings-en-van-der-wulp">De Stemming</a></li>
+    <li><a href="https://npo.nl/luister/podcasts/561-goed-werk">Geld of je leven</a></li>
+    <li><a href="https://npo.nl/luister/podcasts/17-argos">Argos Actueel</a></li>
+    <li><a href="https://skipvids.com/?@nieuwsuur/videos">Nieuwsuur</a></li>
+    <li><a href="https://skipvids.com/?@Lubach_official/videos">Lubach</a></li>
+</ul>
+
+<!-- Sfeermuziek category -->
+<h2 onclick="toggleCategory('sfeermuziek-list')">Sfeermuziek</h2>
+<ul id="sfeermuziek-list">
+    <li><a href="https://icecast.omroep.nl/radio4-sb-aac">NPO Klassiek</a></li>
+    <li><a href="https://wgbh-live.streamguys1.com/classical-hi/">Classical 99.5 WRCB</a></li>
+    <li><a href="https://skipvids.com/?@LofiGirl/streams">Lofi Girl</a></li>    
+    <li><a href="https://air.dnbfm.ru/public/player">DnB Astrakhan</a></li>
+</ul>
+
+<!-- Ontspannen category -->
+<h2 onclick="toggleCategory('ontspannen-list')">Ontspannen</h2>
+<ul id="ontspannen-list">
+    <li><a href="https://skipvids.com/?@Taskmaster/playlists">Taskmaster</a></li>
+    <li><a href="https://skipvids.com/?@MrBeast/videos">MrBeast</a></li>
+    <li><a href="https://skipvids.com/?@WijsneuzenAlbertJasmijn/shorts">Wijsneuzen</a></li>
+    <li><a href="https://skipvids.com/?@VivaLaDirtLeague/videos">VLDL</a></li>
+</ul>
+
+<!-- Leren category -->
+<h2 onclick="toggleCategory('leren-list')">Leren</h2>
+<ul id="leren-list">
+    <li><a href="https://skipvids.com/?@TEDx/videos">TEDx</a></li>
+	<li><a href="https://skipvids.com/?playlist&list=PLoOkB6QkDW_S7fdqmfW-_lwS_Kp_uwfeo">Entire History of the Earth</a></li>
+	<li><a href="https://npo.nl/luister/podcasts/1261-lets-go-mental">Let's go mental</a></li>
+</ul>
+
+</body>
+</html>
